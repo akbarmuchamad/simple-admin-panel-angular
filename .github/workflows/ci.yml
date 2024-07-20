@@ -26,3 +26,6 @@ jobs:
 
     - name: Build Angular project
       run: npm run build --if-present
+
+    - name: Build Angular project
+      run: npm run build --prod --base-href "https://akbarmuchamad.github.io/simple-admin-panel-angular/"
