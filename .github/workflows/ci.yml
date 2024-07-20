@@ -19,15 +19,12 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18.13.0'
+        node-version: '18.19.0'
 
     - name: Install dependencies
       run: |
         npm install -g @angular/cli # Install Angular CLI globally
         npm install # Install project dependencies
-
-    - name: Build Angular project
-      run: npm run build --if-present
 
     - name: Build Angular project
       run: ng build --prod --base-href "https://akbarmuchamad.github.io/simple-admin-panel-angular/"
