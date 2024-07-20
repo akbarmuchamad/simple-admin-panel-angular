@@ -27,7 +27,7 @@ jobs:
         npm install # Install project dependencies
 
     - name: Build Angular project
-      run: ng build --prod --base-href "https://akbarmuchamad.github.io/simple-admin-panel-angular/"
+      run: ng build --configuration production --base-href "https://akbarmuchamad.github.io/simple-admin-panel-angular/"
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
